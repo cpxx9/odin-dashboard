@@ -96,6 +96,11 @@ _____________________________________________ */
   color: var(--gray-2);
 }
 
+.sidebar-header img {
+  width: 70px;
+  height: 70px;
+}
+
 .sidebar-tools img,
 .sidebar-nav img {
   width: 30px;
