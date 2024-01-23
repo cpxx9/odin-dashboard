@@ -4,3 +4,27 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
+
+main {
+  display: grid;
+  grid-template: 1fr 4fr / 0.8fr 4fr;
+  grid-template-areas: "main-grid-sidebar main-grid-header"
+                       "main-grid-sidebar main-content";
+  min-height: 100vh;
+}
+
+main .main-grid-item {
+  border: 1px solid #333;
+}
+
+.main-grid-header {
+  grid-area: main-grid-header;
+}
+
+.main-grid-sidebar {
+  grid-area: main-grid-sidebar;
+}
+
+.main-content {
+  grid-area: main-content;
+}
