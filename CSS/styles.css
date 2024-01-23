@@ -21,7 +21,7 @@ _____________________________________________ */
   --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
-/* Main GridContent Styles
+/* Main Grid Content Styles
 _____________________________________________ */
 html, 
 body {
@@ -106,6 +106,7 @@ _____________________________________________ */
 
 .sidebar-content a:hover {
   color: var(--gray-2);
+  scale: 1.1;
 }
 
 .sidebar-header img {
@@ -116,6 +117,11 @@ _____________________________________________ */
 .sidebar-tools img,
 .sidebar-nav img {
   justify-self: center;
+}
+
+.sidebar-header:hover {
+  cursor: pointer;
+  opacity: .8;
 }
 
 /* Header Styles
@@ -162,6 +168,13 @@ _____________________________________________ */
 
 .header-top-left img {
   justify-self: end;
+}
+
+.header-top img:hover,
+.header-top-right p:hover {
+  scale: 1.2;
+  opacity: .8;
+  cursor: pointer;
 }
 
 .header-top-right {
@@ -215,6 +228,11 @@ _____________________________________________ */
   background-color: var(--main-blue);
   color: var(--gray-1);
   font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  opacity: .8;
 }
 
 /* Main Grid Content Styles
@@ -290,6 +308,7 @@ _____________________________________________ */
 
 .card-tools a:hover {
   opacity: .5;
+  scale: 1.2;
 }
 
 .main-content-right {
@@ -350,4 +369,12 @@ _____________________________________________ */
 .trending-card div img {
   width: 3vw;
   height: 3vw;
+}
+
+.announcement-card div:hover,
+.trending-card div:hover {
+  background-color: var(--gray-2);
+  border-radius: 10px;
+  opacity: .8;
+  cursor: pointer;
 }
