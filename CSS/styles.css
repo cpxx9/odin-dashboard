@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+:root {
+  --gray-1: #fafaf9;
+  --gray-2: #e7e5e4;
+  --gray-3: #292524;
+  --gray-4: #1c1917;
+  --gray-m: #78716c;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -11,20 +19,22 @@ main {
   grid-template-areas: "main-grid-sidebar main-grid-header"
                        "main-grid-sidebar main-content";
   min-height: 100vh;
+  color: var(--gray-3);
 }
 
-main .main-grid-item {
-  border: 1px solid #333;
-}
-
-.main-grid-header {
+section.main-grid-item.main-grid-header {
   grid-area: main-grid-header;
+  background-color: var(--gray-1);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .main-grid-sidebar {
   grid-area: main-grid-sidebar;
+  background-color: #008FE1;
 }
 
 .main-content {
   grid-area: main-content;
+  background-color: var(--gray-2);
+  overflow: auto;
 }
