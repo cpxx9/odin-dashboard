@@ -15,7 +15,7 @@ body {
 
 main {
   display: grid;
-  grid-template: 1fr 4fr / 0.8fr 4fr;
+  grid-template: 0.9fr 4fr / minmax(300px, 1fr) 5fr;
   grid-template-areas: "main-grid-sidebar main-grid-header"
                        "main-grid-sidebar main-content";
   min-height: 100vh;
