@@ -1,16 +1,27 @@
+/* Imports
+_____________________________________________ */
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+/* Global Varibles
+_____________________________________________ */
 :root {
+  /* Grays */
   --gray-1: #fafaf9;
   --gray-2: #e7e5e4;
   --gray-3: #292524;
   --gray-4: #1c1917;
   --gray-m: #78716c;
 
+  /* Color Palettes */
   --main-blue: #6895D2;
   --accent-red: #D04848;
+
+  /* Shadows */
+  --bottom-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
+/* Main Content Styles
+_____________________________________________ */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -28,7 +39,7 @@ main {
 section.main-grid-item.main-grid-header {
   grid-area: main-grid-header;
   background-color: var(--gray-1);
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  box-shadow: var(--bottom-shadow);
 }
 
 .main-grid-sidebar {
