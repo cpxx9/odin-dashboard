@@ -74,7 +74,7 @@ _____________________________________________ */
   padding-left: 3%;
 }
 
-.sidebar-content p,
+.sidebar-content a,
 .sidebar-content h1 {
   margin: 0;
   text-align: start;
@@ -85,9 +85,15 @@ _____________________________________________ */
   font-weight: bolder;
 } 
 
-.sidebar-content p {
+.sidebar-content a {
   font-weight: bold;
   font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--gray-1);
+}
+
+.sidebar-content a:hover {
+  color: var(--gray-2);
 }
 
 .sidebar-tools img,
