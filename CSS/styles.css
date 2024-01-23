@@ -22,6 +22,11 @@ _____________________________________________ */
 
 /* Main GridContent Styles
 _____________________________________________ */
+html, 
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -52,6 +57,12 @@ main {
   grid-area: main-grid-sidebar;
   background-color: var(--main-blue);
 }
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
 /* Sidebar Styles
 _____________________________________________ */
 .main-grid-sidebar {
@@ -69,7 +80,7 @@ _____________________________________________ */
 .sidebar-content {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  gap: 8px;
+  gap: 10px;
   row-gap: 16px;
   padding-left: 3%;
 }
@@ -103,7 +114,102 @@ _____________________________________________ */
 
 .sidebar-tools img,
 .sidebar-nav img {
-  width: 30px;
-  height: 30px;
   justify-self: center;
+}
+
+/* Header Styles
+_____________________________________________ */
+.main-grid-header {
+  display: flex;
+  height: 100%;
+  align-items: stretch;
+}
+.header-content-wrapper {
+  width: 100%;
+  padding: 10px 40px;
+  display: grid;
+  grid-template-rows: .8fr 1fr;
+}
+
+.header-top,
+.header-bottom{
+  display: grid;
+}
+
+.header-top {
+  grid-template-columns: 2fr 1fr;
+  gap: 125px;
+}
+
+.header-top input[type="search"] {
+  border: none;
+  border-radius: 30px;
+  background-color: var(--gray-2);
+}
+
+.header-top div {
+  display: grid;
+}
+
+.header-top-left {
+  grid-template-columns: min-content 1fr;
+  align-content: center;
+  gap: 15px;
+}
+
+.header-top-left img {
+  justify-self: end;
+}
+
+.header-top-right {
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  justify-items: center;
+}
+
+.header-top-right .icon{
+  align-self: center;
+}
+
+.header-top .user-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.header-bottom {
+  grid-template-columns: 1fr .6fr;
+}
+
+.header-bottom-left {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-bottom-left-child.user-logo {
+  width: 90px;
+  height: 90px;
+}
+
+.hello-text * {
+  margin: 0;
+  padding: 0;
+}
+
+.header-bottom-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.header-button {
+  border-radius: 30px;
+  width: 90%;
+  height: 35%;
+  border: none;
+  background-color: var(--main-blue);
+  color: var(--gray-1);
+  font-size: 1.1rem;
 }
