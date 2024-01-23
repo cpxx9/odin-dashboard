@@ -259,6 +259,7 @@ _____________________________________________ */
   flex-direction: column;
   justify-content: space-between;
   padding: 7% 5% 3% 5%;
+  border-left: 12px solid var(--accent-red);
 }
 
 .main-card img {
