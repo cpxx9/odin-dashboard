@@ -6,6 +6,9 @@
   --gray-3: #292524;
   --gray-4: #1c1917;
   --gray-m: #78716c;
+
+  --main-blue: #6895D2;
+  --accent-red: #D04848;
 }
 
 body {
@@ -30,7 +33,7 @@ section.main-grid-item.main-grid-header {
 
 .main-grid-sidebar {
   grid-area: main-grid-sidebar;
-  background-color: #008FE1;
+  background-color: var(--main-blue);
 }
 
 .main-content {
